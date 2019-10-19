@@ -62,6 +62,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\islandMovement.cs" />
+    <Compile Include="Assets\Scripts\backgroundTimer.cs" />
+    <Compile Include="Assets\Scripts\bulletMovement.cs" />
+    <Compile Include="Assets\Scripts\generateBullet.cs" />
     <Compile Include="Assets\Scripts\movement.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/nadianadeem/Documents/GitHub/2DBoatRace/2DBoatRacingNN/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

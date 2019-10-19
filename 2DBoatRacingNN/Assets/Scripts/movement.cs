@@ -25,7 +25,7 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Rigidbody2D>().velocity = Vector2.left * 1;
+        GetComponent<Rigidbody2D>().velocity = Vector2.right * 1;
         if (Input.GetKey(upKey))
         {
             GetComponent<Rigidbody2D>().velocity = Vector2.up * moveSpeed;
