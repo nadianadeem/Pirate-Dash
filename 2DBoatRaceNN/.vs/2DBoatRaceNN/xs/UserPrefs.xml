@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{05AC9D6A-F5A4-989D-1458-D7BEBD7F85CD}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/shipMovement.cs">
+    <Files>
+      <File FileName="Assets/Scripts/shipMovement.cs" Line="38" Column="40" />
+      <File FileName="Assets/Scripts/generateBullet.cs" />
+      <File FileName="Assets/Scripts/bulletMovement.cs" Line="16" Column="65" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="2DBoatRaceNN" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="shipMovement.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2e79c4ac-b3c4-471b-83c9-ef003715ef8b" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
