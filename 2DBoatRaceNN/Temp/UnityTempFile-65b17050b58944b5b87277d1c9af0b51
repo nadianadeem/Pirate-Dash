@@ -295,6 +295,5 @@
 /define:ENABLE_VSTU
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-"Assets/Scripts/bulletMovement.cs"
-"Assets/Scripts/generateBullet.cs"
+"Assets/Scripts/scroller.cs"
 "Assets/Scripts/shipMovement.cs"
