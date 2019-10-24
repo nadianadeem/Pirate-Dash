@@ -19,23 +19,41 @@ public class shipMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(upKey) && transform.position.x > -4.41 && transform.position.x < 8.21)
+        //Allows player to move ship forwards and backwards at the angle the sprite is facing.
+        if (Input.GetKey(upKey))
         {
             transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
-
         }
 
-        else if (Input.GetKey(downKey))
+        if (Input.GetKey(downKey))
         {
             transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
         }
 
-        else if (Input.GetKey(rightKey))
+        //Sets the game boundaries
+        if (transform.position.x < -4.41)
+        {
+           transform.position = new Vector2 (-4, transform.position.y);
+        }
+
+        if (transform.position.x > 8.21)
+        {
+            transform.position = new Vector2 (8, transform.position.y);
+        }
+
+        if (transform.position.y < -5.10)
+        {
+            transform.position = new Vector2(transform.position.x, -5);
+        }
+
+        //This allows the player to move the sprite left and right.
+        //I use a vector three so the 'z' value can be manipulated.
+        if (Input.GetKey(rightKey))
         {
             transform.Rotate(Vector3.back * 2);
         }
 
-        else if (Input.GetKey(leftKey))
+        if (Input.GetKey(leftKey))
         {
             transform.Rotate(Vector3.forward * 2);
         }

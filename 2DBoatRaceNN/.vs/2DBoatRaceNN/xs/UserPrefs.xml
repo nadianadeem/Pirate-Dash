@@ -3,7 +3,7 @@
     <Files>
       <File FileName="Assets/Scripts/shipMovement.cs" Line="38" Column="40" />
       <File FileName="Assets/Scripts/generateBullet.cs" />
-      <File FileName="Assets/Scripts/bulletMovement.cs" Line="16" Column="65" />
+      <File FileName="Assets/Scripts/bulletMovement.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,7 +21,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2e79c4ac-b3c4-471b-83c9-ef003715ef8b" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="67dfad7f-cb76-4ade-988e-47018f4afa47" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

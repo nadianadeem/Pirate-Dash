@@ -215,6 +215,7 @@ GameObject:
   - component: {fileID: 1469400526}
   - component: {fileID: 1469400528}
   - component: {fileID: 1469400529}
+  - component: {fileID: 1469400530}
   m_Layer: 0
   m_Name: redship
   m_TagString: Untagged
@@ -278,8 +279,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469400525}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5570672, y: -2.6289258, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalPosition: {x: -2.1, y: 0.17, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -298,8 +299,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upKey: 119
   downKey: 115
-  leftKey: 0
-  rightKey: 0
+  leftKey: 97
+  rightKey: 100
 --- !u!50 &1469400529
 Rigidbody2D:
   serializedVersion: 4
@@ -321,6 +322,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1469400530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469400525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec825deba777c408387ee7de006c7bbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootKey: 32
+  bullet: {fileID: 8677338631417889509, guid: 9c632b0edddc5434989e87698db06f2f, type: 3}
 --- !u!1 &1603873055
 GameObject:
   m_ObjectHideFlags: 0

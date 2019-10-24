@@ -62,8 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\bulletMovement.cs" />
-    <Compile Include="Assets\Scripts\generateBullet.cs" />
     <Compile Include="Assets\Scripts\shipMovement.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/nadianadeem/Documents/GitHub/2DBoatRace/2DBoatRaceNN/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
