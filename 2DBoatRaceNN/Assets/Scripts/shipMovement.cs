@@ -10,6 +10,30 @@ public class shipMovement : MonoBehaviour
     public KeyCode rightKey;
     private int moveSpeed = 4;
 
+    void boundaries()
+    {
+        //Sets the game boundaries
+        if (transform.position.x < -4.41)
+        {
+            transform.position = new Vector2(-4, transform.position.y);
+        }
+
+        if (transform.position.x > 8.21)
+        {
+            transform.position = new Vector2(8, transform.position.y);
+        }
+
+        if (transform.position.y < -5.10)
+        {
+            transform.position = new Vector2(transform.position.x, -5);
+        }
+
+        if (transform.position.y > 5.10)
+        {
+            transform.position = new Vector2(transform.position.x, 5);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +43,8 @@ public class shipMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        boundaries();
+
         //Allows player to move ship forwards and backwards at the angle the sprite is facing.
         if (Input.GetKey(upKey))
         {
@@ -28,22 +54,6 @@ public class shipMovement : MonoBehaviour
         if (Input.GetKey(downKey))
         {
             transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
-        }
-
-        //Sets the game boundaries
-        if (transform.position.x < -4.41)
-        {
-           transform.position = new Vector2 (-4, transform.position.y);
-        }
-
-        if (transform.position.x > 8.21)
-        {
-            transform.position = new Vector2 (8, transform.position.y);
-        }
-
-        if (transform.position.y < -5.10)
-        {
-            transform.position = new Vector2(transform.position.x, -5);
         }
 
         //This allows the player to move the sprite left and right.
