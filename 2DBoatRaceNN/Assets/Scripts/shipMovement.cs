@@ -8,7 +8,7 @@ public class shipMovement : MonoBehaviour
     public KeyCode downKey;
     public KeyCode leftKey;
     public KeyCode rightKey;
-    private int moveSpeed = 4;
+    private int moveSpeed = 5;
 
     void boundaries()
     {
