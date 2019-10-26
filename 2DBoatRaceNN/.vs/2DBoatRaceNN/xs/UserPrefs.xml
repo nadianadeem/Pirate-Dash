@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{05AC9D6A-F5A4-989D-1458-D7BEBD7F85CD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/scroller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/shipMovement.cs">
     <Files>
-      <File FileName="Assets/Scripts/shipMovement.cs" Line="44" Column="35" />
-      <File FileName="Assets/Scripts/scroller.cs" Line="7" Column="22" />
+      <File FileName="Assets/Scripts/shipMovement.cs" Line="31" Column="35" />
+      <File FileName="Assets/Scripts/scroller.cs" Line="15" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,7 +10,7 @@
           <Node name="2DBoatRaceNN" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="scroller.cs" selected="True" />
+                <Node name="shipMovement.cs" selected="True" />
               </Node>
             </Node>
           </Node>
