@@ -6,6 +6,7 @@ public class scroller : MonoBehaviour
 {
     Material material;
     Vector2 offset;
+    
 
     //Created two public floats so I could change the offset speed outside of the script.
     public float moveX;
