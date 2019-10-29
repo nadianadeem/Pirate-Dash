@@ -46,6 +46,19 @@ public class shipMovement : MonoBehaviour
         boundaries();
 
         //Allows player to move ship forwards and backwards at the angle the sprite is facing.
+
+        //This is for the third party controller. (Xbox One Controller)
+        if (Input.GetKey("w") || Input.GetAxis("joystickVertical") > -1)
+        {
+            transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
+        }
+
+        if (Input.GetKey(downKey) || Input.GetAxis("joystickVertical") <  1)
+        {
+            transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
+        }
+
+        //This is for the keyboard.
         if (Input.GetKey(upKey))
         {
             transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
@@ -58,6 +71,19 @@ public class shipMovement : MonoBehaviour
 
         //This allows the player to move the sprite left and right.
         //I use a vector three so the 'z' value can be manipulated.
+
+        //This is for the third party controller.
+        if (Input.GetAxis("joystickHorizontal") > -1)
+        {
+            transform.Rotate(Vector3.back * 2);
+        }
+
+        if(Input.GetAxis("joystickHorizontal") < 1)
+        {
+            transform.Rotate(Vector3.forward * 2);
+        }
+
+        //This is for the keyboard.
         if (Input.GetKey(rightKey))
         {
             transform.Rotate(Vector3.back * 2);
@@ -67,8 +93,6 @@ public class shipMovement : MonoBehaviour
         {
             transform.Rotate(Vector3.forward * 2);
         }
-
-        
 
     }
 }

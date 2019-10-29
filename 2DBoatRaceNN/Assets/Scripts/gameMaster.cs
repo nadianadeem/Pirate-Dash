@@ -5,8 +5,12 @@ using UnityEngine.UI;
 
 public class gameMaster : MonoBehaviour
 {
-    redShip player = new redShip();
+    public redShip player = new redShip();
 
+    public GameObject log;
+
+    public Text health;
+    public Text lives;
     public Text score;
 
     // Start is called before the first frame update
@@ -18,12 +22,16 @@ public class gameMaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score.text = "HEALTH " + player.Health;
+        health.text = "HEALTH " + player.Health;
+        lives.text = "LIVES " + player.Lives;
+        score.text = "SCORE " + player.Score;
         if (player.Health == 0)
         {
             Destroy(gameObject);
             Debug.Log("Death");
+            player.Lives = player.Lives - 1;
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
