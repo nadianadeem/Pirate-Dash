@@ -12,8 +12,10 @@ public class logMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Moves the obstacles down.
         GetComponent<Rigidbody2D>().velocity = Vector2.down * 6;
 
+        //Once the sprite is off the screen it is deleted so the game does not use memory.
         if (transform.position.y < -5.50)
         {
             Destroy(gameObject);

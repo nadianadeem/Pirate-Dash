@@ -8,7 +8,7 @@ public class shipMovement : MonoBehaviour
     public KeyCode downKey;
     public KeyCode leftKey;
     public KeyCode rightKey;
-    private int moveSpeed = 5;
+    private int moveSpeed = 6;
 
     void boundaries()
     {
@@ -44,6 +44,9 @@ public class shipMovement : MonoBehaviour
     void Update()
     {
         boundaries();
+
+        GetComponent<Rigidbody2D>().velocity = -Vector2.up * 3/2;
+        //transform.Translate(Vector2.down * 1/100);
 
         //Allows player to move ship forwards and backwards at the angle the sprite is facing.
 
