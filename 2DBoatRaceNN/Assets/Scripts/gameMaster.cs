@@ -10,6 +10,10 @@ public class gameMaster : MonoBehaviour
 
     //Creates an instance of the class 'redShip'.
     public redShip player = new redShip();
+    public enemy log = new enemy();
+    public enemy fish = new enemy();
+
+    
 
     //The text for the UI is held in these variables so they can be changed throughout the game.
     public Text health;
@@ -27,6 +31,8 @@ public class gameMaster : MonoBehaviour
     {
         //The medkit trigger is set to false so the animation isn't carried out straight away.
         animationController.SetBool("medkitTrigger", false);
+        log.Damage = 50;
+        fish.Damage = 25;
     }
 
     // Update is called once per frame
@@ -56,7 +62,7 @@ public class gameMaster : MonoBehaviour
             
         }
 
-        if (animationTime == 58)
+        if (animationTime == 57)
         {
             animationController.SetBool("medkitTrigger", false);
         }
@@ -70,7 +76,7 @@ public class gameMaster : MonoBehaviour
         if (collision.gameObject.tag == "log")
         {
             Destroy(collision.gameObject);
-            player.Health = player.Health - 50;
+            player.Health = player.Health - log.Damage;
         }
 
         else if (collision.gameObject.tag == "medkit")
@@ -86,7 +92,7 @@ public class gameMaster : MonoBehaviour
         if (collision.gameObject.tag == "fish")
         {
             Destroy(collision.gameObject);
-            player.Health = player.Health - 50;
+            player.Health = player.Health - fish.Damage;
         }
 
         else if (collision.gameObject.tag == "coin")
