@@ -2,13 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.2DBoatRaceNN PreferredExecutionTarget="b7174615-ccba-448a-a8be-1b02ec7d614b" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/gameMaster.cs">
     <Files>
-      <File FileName="Assets/Scripts/logMovement.cs" Line="18" Column="79" />
-      <File FileName="Assets/Scripts/shipMovement.cs" Line="23" Column="47" />
-      <File FileName="Assets/Scripts/spawner.cs" Line="52" Column="10" />
-      <File FileName="Assets/Scripts/scroller.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/redShip.cs" Line="16" Column="28" />
-      <File FileName="Assets/Scripts/enemy.cs" Line="18" Column="3" />
-      <File FileName="Assets/Scripts/gameMaster.cs" Line="13" Column="1" />
+      <File FileName="Assets/Scripts/gameMaster.cs" Line="66" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,7 +20,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b7174615-ccba-448a-a8be-1b02ec7d614b" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ab3ba807-522b-4c63-9b09-7124679ca397" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

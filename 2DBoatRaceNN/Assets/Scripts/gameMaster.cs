@@ -20,6 +20,7 @@ public class gameMaster : MonoBehaviour
     public Text lives;
     public Text score;
     public Text timer;
+    private int i;
 
     public int scoreBonus;
 
@@ -45,14 +46,19 @@ public class gameMaster : MonoBehaviour
         health.text = "HEALTH " + player.Health;
         lives.text = "LIVES " + player.Lives;
         score.text = "SCORE " + player.Score;
+
         //The time is rounded to seconds, as a decimal it is unneccessary for the reader.
         timer.text = "TIMER " + (Mathf.RoundToInt(Time.time));
 
-        if (player.Lives == 0)
+       if (player.Lives <= 0)
         {
             Destroy(gameObject);
-            scoreBonus = scoreBonus + Mathf.RoundToInt(Time.time);
-            player.Score += scoreBonus;
+            scoreBonus = Mathf.RoundToInt(Time.time);
+            for (i=0; i < scoreBonus; i++)
+            {
+                player.Score = player.Score + 10;
+                Debug.Log(player.Score);
+            }
             score.text = "SCORE " + player.Score;
         }
 
@@ -71,16 +77,20 @@ public class gameMaster : MonoBehaviour
 
     //Checks the collision of the 2D box colliders between the prefabs and players.
     //The prefabs are assigned a tag which corrisponds to the spedic actions that take place.
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "log")
         {
+            //Removes sprite from the scene.
             Destroy(collision.gameObject);
             player.Health = player.Health - log.Damage;
+            //The health property for the object player has the integer stored in the damage property in the object log.
         }
 
         else if (collision.gameObject.tag == "medkit")
         {
+            //Removes sprite from the scene.
             Destroy(collision.gameObject);
             player.Health = player.Health + 50;
             //Triggers the medkit animation to play.
@@ -91,12 +101,14 @@ public class gameMaster : MonoBehaviour
 
         if (collision.gameObject.tag == "fish")
         {
+            //Removes sprite from the scene.
             Destroy(collision.gameObject);
             player.Health = player.Health - fish.Damage;
         }
 
         else if (collision.gameObject.tag == "coin")
         {
+            //Removes sprite from the scene.
             Destroy(collision.gameObject);
             player.Score = player.Score + 100;
         }

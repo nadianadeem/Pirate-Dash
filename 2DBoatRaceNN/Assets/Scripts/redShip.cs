@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-
+//Creates a class called 'redShip'.
+//Can be used for the opponent ship when another player is added.
 public class redShip
 {
-	private int health = 100;
+    //A series of private integers are created, this will be manipulated using 'get and 'set' methods below.
+    private int health = 100;
     public int Health
     {
         get

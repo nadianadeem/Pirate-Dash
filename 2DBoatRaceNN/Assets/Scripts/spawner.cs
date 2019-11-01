@@ -4,20 +4,28 @@ using UnityEngine;
 
 public class spawner : MonoBehaviour
 {
+    //Public game objects are used so I can instanitate the obstacles/rewards.
     public GameObject log;
     public GameObject medkit;
     public GameObject coin;
     public GameObject fish;
+
+    //Individual timers so the obstacles/rewards are spawned regularly.
     private int logTime;
     private int fishTime;
     private int medkitTime;
     private int coinTime;
-    private Vector3[,] spawnPoints = new Vector3[3, 1] { { new Vector3(-2, 6, 0) }, { new Vector3(6, 6, 0) }, { new Vector3(0, 6, 0) } };
-    private Vector3[,] spawnPoints2 = new Vector3[3, 1] { { new Vector3(2, 6, 0) }, { new Vector3(-4, 6, 0) } , { new Vector3(4, 6, 0) } };
+
+    //These empty integer variables are used to randomly generate a number
+    //to see how many obstacles/rewards are spawned and where they are spawned.
     private int spawnNumber;
     private int position;
     private int position2;
-    private
+
+    //These two arrays hold vector 3 coordinates to randomly spawn obstacles/rewards.
+    private Vector3[,] spawnPoints = new Vector3[3, 1] { { new Vector3(-2, 6, 0) }, { new Vector3(6, 6, 0) }, { new Vector3(0, 6, 0) } };
+    private Vector3[,] spawnPoints2 = new Vector3[3, 1] { { new Vector3(2, 6, 0) }, { new Vector3(-4, 6, 0) } , { new Vector3(4, 6, 0) } };
+    
 
     // Start is called before the first frame update
     void Start()
@@ -28,9 +36,13 @@ public class spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Generates the random numbers for the amount of obstacles/rewards spawned and their locations.
         spawnNumber = Random.Range(1, 3);
+        //The position numbers correspond to a position in an array.
         position = Random.Range(0, 3);
         position2 = Random.Range(0, 3);
+
+        //Adds one to each timer so when they reach a specific number the objects are instantiated.
         logTime += 1;
         fishTime += 1;
         medkitTime += 1;

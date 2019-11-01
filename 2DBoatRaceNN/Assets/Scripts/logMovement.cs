@@ -18,6 +18,7 @@ public class logMovement : MonoBehaviour
         //Once the sprite is off the screen it is deleted so the game does not use memory.
         if (transform.position.y < -5.50)
         {
+            //Removes sprite from the scene so unneccesary memory is not used.
             Destroy(gameObject);
         }
     }

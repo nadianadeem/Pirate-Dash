@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class shipMovement : MonoBehaviour
 {
+    //Key codes are created publicly so they can be set in unity as W,A,S,D.
     public KeyCode upKey;
     public KeyCode downKey;
     public KeyCode leftKey;
     public KeyCode rightKey;
+
+    //Integer is used as a variable for the speed of the boat.
     private int moveSpeed = 6;
 
+    //
     void boundaries()
     {
         //Sets the game boundaries
@@ -37,6 +41,8 @@ public class shipMovement : MonoBehaviour
     void redShipMovement()
 	{
 		//Allows player to move ship forwards and backwards at the angle the sprite is facing.
+        //The translate method is used to move the boat forward in the direction
+        //its facing. I use this equation since Vector 2 doesn't have a method to move forward.
 
 		//This is for the third party controller. (Xbox One Controller)
 		if (Input.GetKey("w") || Input.GetAxis("joystickVertical") > -1)
@@ -60,11 +66,13 @@ public class shipMovement : MonoBehaviour
 			transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
 		}
 
-		//This allows the player to move the sprite left and right.
-		//I use a vector three so the 'z' value can be manipulated.
+        //This allows the player to rotate the sprite left and right.
+        //I use a vector three so the 'z' value can be manipulated.
 
-		//This is for the third party controller.
-		if (Input.GetAxis("joystickHorizontal") > -1)
+        //This is for the third party controller.
+        //Rotate method is used to rotate the boat.
+        //A vector3 is used as the z axis has to be manipulated which isn't included in a vector 2D.
+        if (Input.GetAxis("joystickHorizontal") > -1)
 		{
 			transform.Rotate(Vector3.back * 2);
 		}
@@ -95,9 +103,12 @@ public class shipMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Methods are ran every frame
         boundaries();
 		redShipMovement();
 
+        //This makes the boat move backwards constantly,
+        //making the boat feel like its going against the tide.
         GetComponent<Rigidbody2D>().velocity = -Vector2.up * 3/2;
     }
 }
