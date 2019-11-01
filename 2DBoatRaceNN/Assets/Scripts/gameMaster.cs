@@ -50,6 +50,9 @@ public class gameMaster : MonoBehaviour
         //The time is rounded to seconds, as a decimal it is unneccessary for the reader.
         timer.text = "TIMER " + (Mathf.RoundToInt(Time.time));
 
+        //If the lives of the player are empty
+        //the sprite is removed from the scene and the seconds that the player was alive
+        //for is multiplied by 10 using a FOR loop and then it is added to the player's score.
        if (player.Lives <= 0)
         {
             Destroy(gameObject);
@@ -62,6 +65,8 @@ public class gameMaster : MonoBehaviour
             score.text = "SCORE " + player.Score;
         }
 
+        //If the player runs out of health the lives of the player are decreased by one using
+        //the 'get' and 'set' methods.
         if (player.Health == 0)
         {
             player.Lives = player.Lives - 1;
@@ -111,6 +116,7 @@ public class gameMaster : MonoBehaviour
             //Removes sprite from the scene.
             Destroy(collision.gameObject);
             player.Score = player.Score + 100;
+            //Adds 100 to the score property in the player object.
         }
 
     }
