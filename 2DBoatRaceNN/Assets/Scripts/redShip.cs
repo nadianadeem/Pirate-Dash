@@ -5,7 +5,7 @@ using UnityEngine;
 //Can be used for the opponent ship when another player is added.
 public class redShip
 {
-    //A series of private integers are created, this will be manipulated using 'get and 'set' methods below.
+    //A series of private integers are created, this will be accessed using 'get and 'set' methods below.
     private int health = 100;
     public int Health
     {

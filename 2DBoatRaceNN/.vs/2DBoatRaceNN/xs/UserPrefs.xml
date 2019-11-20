@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{05AC9D6A-F5A4-989D-1458-D7BEBD7F85CD}|">
   <MonoDevelop.Ide.ItemProperties.2DBoatRaceNN PreferredExecutionTarget="b7174615-ccba-448a-a8be-1b02ec7d614b" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/spawner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/redShip.cs">
     <Files>
-      <File FileName="Assets/Scripts/gameMaster.cs" Line="38" Column="1" />
-      <File FileName="Assets/Scripts/spawner.cs" Line="11" Column="28" />
-      <File FileName="Assets/Scripts/logMovement.cs" />
-      <File FileName="Assets/Scripts/redShip.cs" />
+      <File FileName="Assets/Scripts/gameMaster.cs" Line="70" Column="29" />
+      <File FileName="Assets/Scripts/spawner.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/logMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/redShip.cs" Line="8" Column="70" />
       <File FileName="Assets/Scripts/shipMovement.cs" />
     </Files>
     <Pads>
@@ -14,7 +14,7 @@
           <Node name="2DBoatRaceNN" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="spawner.cs" selected="True" />
+                <Node name="redShip.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -24,7 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="998f8bd9-b100-44f1-b1a6-34b7fa3187d9" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="966a9a94-4021-47d7-96a6-53b586c6eed7" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

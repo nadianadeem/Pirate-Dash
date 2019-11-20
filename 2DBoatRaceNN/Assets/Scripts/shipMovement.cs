@@ -45,12 +45,12 @@ public class shipMovement : MonoBehaviour
         //its facing. I use this equation since Vector 2 doesn't have a method to move forward.
 
 		//This is for the third party controller. (Xbox One Controller)
-		if (Input.GetKey("w") || Input.GetAxis("joystickVertical") > -1)
+		if (Input.GetAxis("joystickVertical") > -1)
 		{
 			transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
 		}
 
-		if (Input.GetKey(downKey) || Input.GetAxis("joystickVertical") < 1)
+		if (Input.GetAxis("joystickVertical") < 1)
 		{
 			transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
 		}

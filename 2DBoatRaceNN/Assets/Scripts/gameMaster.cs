@@ -67,7 +67,7 @@ public class gameMaster : MonoBehaviour
 
         //If the player runs out of health the lives of the player are decreased by one using
         //the 'get' and 'set' methods.
-        if (player.Health == 0)
+        if (player.Health <= 0)
         {
             player.Lives = player.Lives - 1;
             
