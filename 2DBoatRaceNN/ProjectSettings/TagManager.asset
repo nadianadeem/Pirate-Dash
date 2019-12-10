@@ -8,6 +8,9 @@ TagManager:
   - medkit
   - coin
   - fish
+  - 1Player
+  - 2Player
+  - Exit
   layers:
   - Default
   - TransparentFX
