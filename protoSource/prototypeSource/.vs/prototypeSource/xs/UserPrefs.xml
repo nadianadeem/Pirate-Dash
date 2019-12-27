@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{53BD417F-EEDC-3622-6929-79CEED6EE1FE}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/shipMovement.cs">
+    <Files>
+      <File FileName="Assets/Scripts/gameMaster.cs" Line="88" Column="10" />
+      <File FileName="Assets/Scripts/specificTwoPlayerScripts/playerTwoGameMaster.cs" />
+      <File FileName="Assets/Scripts/shipMovement.cs" Line="127" Column="70" />
+      <File FileName="Assets/Scripts/scroller.cs" />
+      <File FileName="Assets/Scripts/specificTwoPlayerScripts/playerOneGameMaster.cs" />
+      <File FileName="Assets/Scripts/spawner.cs" Line="37" Column="38" />
+      <File FileName="Assets/Scripts/redShip.cs" />
+      <File FileName="Assets/Scripts/logMovement.cs" />
+      <File FileName="Assets/Scripts/shotMovement.cs" />
+      <File FileName="Assets/Scripts/specificTwoPlayerScripts/playerTwoShotMovement.cs" />
+      <File FileName="Assets/Scripts/specificTwoPlayerScripts/playerOneShot.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="prototypeSource" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="specificTwoPlayerScripts" expanded="True" />
+                <Node name="shipMovement.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fcfeb276-1b02-4bb3-b09c-038388defc85" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
