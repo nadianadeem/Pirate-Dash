@@ -5,12 +5,13 @@ using UnityEngine;
 public class playerOneShot : MonoBehaviour
 {
     public gameMaster playerOne;
+    public int i;
     private void OnTriggerEnter2D(Collider2D collisionOne)
     {
         if (collisionOne.gameObject.tag == "playerTwoShot")
         {
-            playerOne.player.Health = playerOne.player.Health - 50;
-            playerOne.player.Score = playerOne.player.Score - 150;
+            playerOne.gameMasterInfo.player.Score = playerOne.gameMasterInfo.cannonball.applyScore(playerOne.gameMasterInfo.player.Score, playerOne.gameMasterInfo.cannonball.ScoreDamage, i);
+            playerOne.gameMasterInfo.player.Health = playerOne.gameMasterInfo.cannonball.applyDamage(playerOne.gameMasterInfo.player.Health, playerOne.gameMasterInfo.cannonball.Damage);
             Destroy(collisionOne.gameObject);
         }
     }

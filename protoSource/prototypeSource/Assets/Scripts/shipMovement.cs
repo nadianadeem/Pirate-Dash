@@ -52,13 +52,11 @@ public class shipMovement : MonoBehaviour
 		//This is for the third party controller. (Xbox One Controller)
 		if (Input.GetAxis("joystickVertical") > -1)
 		{
-            Debug.Log("forward");
             transform.Translate(Vector2.up * moveSpeed * Time.deltaTime);
         }
 
 		if (Input.GetAxis("joystickVertical") < 1)
 		{
-            Debug.Log("back");
 			transform.Translate(Vector2.down * moveSpeed * Time.deltaTime);
 		}
 
@@ -102,20 +100,24 @@ public class shipMovement : MonoBehaviour
 
         if(Input.GetKeyDown(shooter))
         {
-             if (gm.player.Shots > 0)
+             if (gm.gameMasterInfo.player.Shots > 0)
             {
                 Debug.Log("shoot");
                 Instantiate(shot, gameObject.transform.position, transform.rotation);
-                gm.player.Shots = gm.player.Shots - 1;
+                gm.gameMasterInfo.player.Shots = gm.gameMasterInfo.player.Shots - 1;
+            }
+        }
+
+        if (Input.GetButtonDown("XboxATwo"))
+        {
+            if (gm.gameMasterInfo.player.Shots > 0)
+            {
+                Instantiate(shot, gameObject.transform.position, transform.rotation);
+                gm.gameMasterInfo.player.Shots = gm.gameMasterInfo.player.Shots - 1;
             }
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

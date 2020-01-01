@@ -7,12 +7,14 @@ using UnityEngine.SceneManagement;
 public class playerTwoGameMaster : MonoBehaviour
 {
     public gameMaster playerTwo;
+
+    public int i;
     private void OnTriggerEnter2D(Collider2D collisionTwo)
     {
         if (collisionTwo.gameObject.tag == "shot")
         {
-            playerTwo.player.Health = playerTwo.player.Health - 50;
-            playerTwo.player.Score = playerTwo.player.Score - 150;
+            playerTwo.gameMasterInfo.player.Score = playerTwo.gameMasterInfo.cannonball.applyScore(playerTwo.gameMasterInfo.player.Score, playerTwo.gameMasterInfo.cannonball.ScoreDamage, i);
+            playerTwo.gameMasterInfo.player.Health = playerTwo.gameMasterInfo.cannonball.applyDamage(playerTwo.gameMasterInfo.player.Health, playerTwo.gameMasterInfo.cannonball.Damage);
             Destroy(collisionTwo.gameObject);
         }
     }

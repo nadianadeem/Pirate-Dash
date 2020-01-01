@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/onePlayer.unity
     guid: 2c75c0d5c4fc94d72bbf01364eff5c87
   - enabled: 1
@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/playerTwoWins.unity
     guid: 64e906630583945bba38df79b426c228
+  - enabled: 1
+    path: Assets/Scenes/draw.unity
+    guid: 49ac3b8d1ed25b244834fd6ea132ed5a
   m_configObjects: {}
