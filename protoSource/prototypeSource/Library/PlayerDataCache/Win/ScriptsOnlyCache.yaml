@@ -1,11 +1,15 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - checkDeathPlayerOne
+    - checkWinner
+    - defineObstacle
     - gameMaster
     - logMovement
     - playerOneShot
     - playerTwoGameMaster
     - playerTwoMovement
+    - playerTwoShotMovement
     - scroller
     - shipMovement
     - shotMovement
@@ -28,6 +32,99 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/draw.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    Assets/Scenes/playerOneWins.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    Assets/Scenes/playerTwoWins.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
     Assets/Scenes/twoPlayerMedium.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -74,17 +171,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9332}
     - Class: 114
-      Script: {instanceID: 9398}
+      Script: {instanceID: 9396}
     - Class: 114
-      Script: {instanceID: 9410}
+      Script: {instanceID: 9408}
     - Class: 114
-      Script: {instanceID: 9456}
+      Script: {instanceID: 9454}
     - Class: 114
-      Script: {instanceID: 9470}
+      Script: {instanceID: 9468}
     - Class: 114
-      Script: {instanceID: 9596}
+      Script: {instanceID: 9594}
     - Class: 114
-      Script: {instanceID: 9632}
+      Script: {instanceID: 9630}
     - Class: 114
       Script: {instanceID: 9714}
     - Class: 114
@@ -94,13 +191,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9930}
     - Class: 114
-      Script: {instanceID: 10060}
+      Script: {instanceID: 9952}
     - Class: 114
-      Script: {instanceID: 10070}
+      Script: {instanceID: 9970}
     - Class: 114
-      Script: {instanceID: 10224}
+      Script: {instanceID: 10066}
     - Class: 114
-      Script: {instanceID: 10392}
+      Script: {instanceID: 10076}
+    - Class: 114
+      Script: {instanceID: 10178}
+    - Class: 114
+      Script: {instanceID: 10230}
+    - Class: 114
+      Script: {instanceID: 10294}
+    - Class: 114
+      Script: {instanceID: 10400}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -124,7 +229,7 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: b9a2c25513ba066bae0887444d000fc4
+      Hash: d96cc5b0a1cafb53a219f0ed9369d8cb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: playerTwoGameMaster
@@ -152,12 +257,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: shipMovement
-  - hash:
-      serializedVersion: 2
-      Hash: c355dd8c3985df74158fdece01d95a31
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: playerOneGameMaster
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -370,7 +469,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 617685f223a9b406b2c588eff61cbdc0
+      Hash: 418af4b5d57a1a4309171277513541fc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: spawner
@@ -574,7 +673,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: a4bc9b2bcdba1527cebe1ceed05df3f5
+      Hash: 12aeed1442bf539de5adb3854ad020b8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: playerTwoMovement
@@ -616,7 +715,7 @@ ScriptsOnlyBuild:
     className: scroller
   - hash:
       serializedVersion: 2
-      Hash: 236fdcad13467caf4e5fd8f451d3cec6
+      Hash: 4b4323f5eeea4e4b1e6d201abab8915a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: playerOneShot
@@ -686,6 +785,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: d75a148e88ef2b94995dfff3d621564b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: checkDeathPlayerOne
+  - hash:
+      serializedVersion: 2
+      Hash: a3adcfd242db1aec0c5a8b11eae6efdd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: checkWinner
   - hash:
       serializedVersion: 2
       Hash: 3f8d7b92a6be3c715e55d5cfa7cc8384
@@ -778,10 +889,16 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: 6f2ea972dc6b4c9c3e29f17e25a20d04
+      Hash: a26f7c295e147e1c62076dede0698089
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: gameMaster
+  - hash:
+      serializedVersion: 2
+      Hash: 579a98f7b0fca4b78609a38914872c72
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: defineObstacle
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -827,4 +944,7 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/twoPlayerMedium.unity
-  playerPath: C:/Users/Nadia/Documents/GitHub/2DBoatRace/protoSource/prototypeSource/build/prototypeSource.exe
+  - Assets/Scenes/playerOneWins.unity
+  - Assets/Scenes/playerTwoWins.unity
+  - Assets/Scenes/draw.unity
+  playerPath: C:/Users/Nadia/Documents/GitHub/2DBoatRace/protoSource/prototypeSource/finalBuildV2/prototypeSource.exe
