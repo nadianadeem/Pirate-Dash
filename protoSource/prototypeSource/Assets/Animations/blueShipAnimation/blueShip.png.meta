@@ -104,8 +104,8 @@ TextureImporter:
         width: 568
         height: 931
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 64, z: 0, w: 46}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -120,13 +120,13 @@ TextureImporter:
       name: blueShip_1
       rect:
         serializedVersion: 2
-        x: 2446
+        x: 2451
         y: 2380
         width: 820
         height: 1176
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 116, y: 121, z: 150, w: 120}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 116, y: 181, z: 150, w: 174}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -146,8 +146,8 @@ TextureImporter:
         width: 1067
         height: 1304
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 243, y: 184, z: 258, w: 184}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 243, y: 239, z: 258, w: 248}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -167,8 +167,8 @@ TextureImporter:
         width: 1337
         height: 1449
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 382, y: 262, z: 393, w: 247}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 382, y: 325, z: 393, w: 307}
       outline: []
       physicsShape: []
       tessellationDetail: 0

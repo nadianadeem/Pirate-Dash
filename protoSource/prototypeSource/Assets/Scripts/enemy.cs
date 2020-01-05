@@ -17,4 +17,10 @@ public class enemy
 			damage = value;
 		}
 	}
+
+    public virtual int applyDamage(int playerHealth, int enemyType)
+    {
+        playerHealth = playerHealth - enemyType;
+        return playerHealth;
+    }
 }

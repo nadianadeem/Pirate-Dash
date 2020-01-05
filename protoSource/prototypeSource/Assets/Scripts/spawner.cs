@@ -14,7 +14,7 @@ public class spawner : MonoBehaviour
     public GameObject shark;
     public GameObject rain;
     public shipMovement redshipsMovement;
-    public shipMovement blueshipsMovement;
+    public playerTwoMovement blueshipsMovement;
     
     private int spriteNumber;
 
