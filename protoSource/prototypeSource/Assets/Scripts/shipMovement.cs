@@ -12,6 +12,7 @@ public class shipMovement : MonoBehaviour
     public KeyCode shooter;
     public GameObject shot;
 
+    //Allows the gameMaster script to be used within this script.
     public gameMaster gm;
 
     //Integer is used as a variable for the speed of the boat.
@@ -98,6 +99,9 @@ public class shipMovement : MonoBehaviour
 			transform.Rotate(Vector3.forward * 2);
 		}
 
+        //This is for the shooting mechanism of the cannon ball shots.
+        //A cannon ball shot is created if the player has shots avaliable.
+        //A shot is then taken away for the value to account for the one created.
         if(Input.GetKeyDown(shooter))
         {
              if (gm.gameMasterInfo.player.Shots > 0)
@@ -108,6 +112,7 @@ public class shipMovement : MonoBehaviour
             }
         }
 
+        //Checks if the xbox controller green button to carry out the shooting mechanic.
         if (Input.GetButtonDown("XboxATwo"))
         {
             if (gm.gameMasterInfo.player.Shots > 0)

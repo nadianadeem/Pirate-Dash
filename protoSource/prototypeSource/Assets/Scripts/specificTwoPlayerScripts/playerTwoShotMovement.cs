@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class playerTwoShotMovement : MonoBehaviour
 {
+    //Movement for bullet.
     void shotMovement()
     {
+        //Shot moves left at a constant speed when created.
         transform.Translate(Vector2.left * 6 * Time.deltaTime);
     }
 

@@ -65,7 +65,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\buttonClick.cs" />
     <Compile Include="Assets\Scripts\cannonBall.cs" />
-    <Compile Include="Assets\Scripts\canonBall.cs" />
     <Compile Include="Assets\Scripts\defineObstacle.cs" />
     <Compile Include="Assets\Scripts\enemy.cs" />
     <Compile Include="Assets\Scripts\exit.cs" />

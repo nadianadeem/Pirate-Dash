@@ -92,17 +92,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9774}
     - Class: 114
-      Script: {instanceID: 10066}
+      Script: {instanceID: 9808}
     - Class: 114
-      Script: {instanceID: 10076}
+      Script: {instanceID: 9938}
     - Class: 114
-      Script: {instanceID: 10400}
+      Script: {instanceID: 10068}
     - Class: 114
-      Script: {instanceID: 15948}
+      Script: {instanceID: 10078}
     - Class: 114
-      Script: {instanceID: 18082}
+      Script: {instanceID: 10212}
     - Class: 114
-      Script: {instanceID: 18606}
+      Script: {instanceID: 10404}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -233,17 +233,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9728}
     - Class: 114
-      Script: {instanceID: 9930}
+      Script: {instanceID: 9932}
     - Class: 114
-      Script: {instanceID: 9952}
+      Script: {instanceID: 9956}
     - Class: 114
-      Script: {instanceID: 9970}
+      Script: {instanceID: 9974}
     - Class: 114
-      Script: {instanceID: 10178}
+      Script: {instanceID: 10180}
     - Class: 114
-      Script: {instanceID: 10230}
+      Script: {instanceID: 10234}
     - Class: 114
-      Script: {instanceID: 10294}
+      Script: {instanceID: 10298}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -789,6 +789,12 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: buttonClick
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -817,6 +823,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: logMovement
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: exit
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -921,6 +933,12 @@ ScriptsOnlyBuild:
     className: DataPrivacyButton
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: mainMenu
+  - hash:
+      serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -979,24 +997,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: mainMenu
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: buttonClick
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: exit
   platform: 19
   scenePathNames:
   - Assets/Scenes/menu.unity
@@ -1004,4 +1004,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/playerOneWins.unity
   - Assets/Scenes/playerTwoWins.unity
   - Assets/Scenes/draw.unity
-  playerPath: C:/Users/Nadia/Documents/GitHub/2DBoatRace/protoSource/prototypeSource/finalBuildV2/prototypeSource.exe
+  playerPath: C:/Users/Nadia/Documents/finalBuild/prototypeSource.exe

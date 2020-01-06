@@ -6,11 +6,12 @@ public class shotMovement : MonoBehaviour
 {
     void playerOneShotMovement()
     {
+        //Shot move to the right when created.
         transform.Translate(Vector2.right * 6 * Time.deltaTime);
     }
     void boundaries()
     {
-        //Sets the game boundaries
+        //Sets the game boundaries for the shots.
         if (transform.position.x < -4.41)
         {
             Destroy(gameObject);
@@ -35,6 +36,7 @@ public class shotMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Runs methods created every frame.
         playerOneShotMovement();
         boundaries();
     }

@@ -29,7 +29,7 @@ public class logMovement : MonoBehaviour
     {
         //Moves the obstacles down.
         GetComponent<Rigidbody2D>().velocity = Vector2.down * 5;
-
+        //Checks boundaries by running methods.
         boundaries();
     }
 }

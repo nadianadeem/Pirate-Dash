@@ -31,13 +31,17 @@ public class spawner : MonoBehaviour
     private Vector3[,] spawnPoints = new Vector3[3, 1] { { new Vector3(-2, 6, 0) }, { new Vector3(6, 6, 0) }, { new Vector3(0, 6, 0) } };
     private Vector3[,] spawnPoints2 = new Vector3[3, 1] { { new Vector3(2, 6, 0) }, { new Vector3(-4, 6, 0) } , { new Vector3(4, 6, 0) } };
 
+    //This is weather condition that happens every other minute throughout the game.
     private void startRaining()
     {
+        //The rain particle system is constantly playing, but I change the z value to make it hidden and seen.
         rain.transform.position = new Vector3(rain.transform.position.x, rain.transform.position.y , -1);
+        //When it is raining the pullback of the ships are increased.
         redshipsMovement.pullBack = 2;
         blueshipsMovement.pullBack = 2;
     }
 
+    //This method stops the rain from being seen by change the z value to 1.
     private void stopRaining()
     {
         rain.transform.position = new Vector3(rain.transform.position.x, rain.transform.position.y, 1);
@@ -46,6 +50,7 @@ public class spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //This sets the times that the rain starts and stops by playing the methods created above at certain times.
         InvokeRepeating("startRaining", 60, 121);
         InvokeRepeating("stopRaining", 120, 60);
     }
@@ -68,6 +73,7 @@ public class spawner : MonoBehaviour
             suspend += 1;
             //if the spriteNumber corresponds to one of the IF statements either 1 or 2
             //sprites will spawn or nothing will spawn if the number doesn't correspond, making it random.
+            //Creates log.
             if (spriteNumber == 1)
             {
                 if (spawnNumber == 1)
@@ -81,6 +87,7 @@ public class spawner : MonoBehaviour
                     Instantiate(log, spawnPoints2[position2, 0], Quaternion.identity);
                 }
             }
+            //Creates fish.
             if (spriteNumber == 2)
             {
                 if (spawnNumber == 1)
@@ -94,20 +101,23 @@ public class spawner : MonoBehaviour
                     Instantiate(fish, spawnPoints2[position2, 0], Quaternion.identity);
                 }
             }
+            //Creates coin.
             if (spriteNumber == 3)
             {
                 Instantiate(coin, spawnPoints[position, 0], Quaternion.identity);
                 Instantiate(coin, spawnPoints2[position2, 0], Quaternion.identity);
             }
+            //Creates medkit
             if (spriteNumber == 4)
             {
                 Instantiate(medkit, spawnPoints2[position2, 0], Quaternion.identity);
             }
+            //creates cannon ball shot pickup.
             if (spriteNumber == 5)
             {
                 Instantiate(canon, spawnPoints2[position2, 0], Quaternion.identity);
             }
-
+            //Creates shark obstacle.
             if (spriteNumber == 6)
             {
                 Instantiate(shark, spawnPoints[position, 0], Quaternion.identity);

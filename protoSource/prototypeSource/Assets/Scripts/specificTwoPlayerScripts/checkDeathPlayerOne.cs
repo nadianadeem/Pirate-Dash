@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class checkDeathPlayerOne : MonoBehaviour
 {
+    //Gather scripts that are need to check the UI values.
     public GameObject playerOne;
     public GameObject playerTwo;
     public gameMaster checkOneDeath;
@@ -12,17 +13,21 @@ public class checkDeathPlayerOne : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //If player one dies.
         if (checkOneDeath.gameMasterInfo.player.Lives <= 0)
         {
-            Debug.Log("Player Two Wins");
+            //Player one is destroyed.
             Destroy(playerOne);
+            //The player two wins scene is loaded.
             SceneManager.LoadScene(sceneName: "playerTwoWins");
         }
 
+        //If player two dies.
         if (checkTwoDeath.gameMasterInfo.player.Lives <= 0)
         {
-            Debug.Log("Player One Wins");
+            //Player two is destroyed.
             Destroy(playerTwo);
+            //The player one wins scene is loaded.
             SceneManager.LoadScene(sceneName: "playerOneWins");
         }
     }

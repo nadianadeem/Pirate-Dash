@@ -98,6 +98,9 @@ public class playerTwoMovement : MonoBehaviour
             transform.Rotate(Vector3.forward * 2);
         }
 
+        //This is for the shooting mechanism of the cannon ball shots.
+        //A cannon ball shot is created if the player has shots avaliable.
+        //A shot is then taken away for the value to account for the one created.
         if (Input.GetKeyDown(shooter))
         {
             if (gm.gameMasterInfo.player.Shots > 0)
@@ -108,6 +111,7 @@ public class playerTwoMovement : MonoBehaviour
             }
         }
 
+        //Checks if the xbox controller green button to carry out the shooting mechanic.
         if (Input.GetButtonDown("XboxA"))
         {
             if (gm.gameMasterInfo.player.Shots > 0)
@@ -116,12 +120,6 @@ public class playerTwoMovement : MonoBehaviour
                 gm.gameMasterInfo.player.Shots = gm.gameMasterInfo.player.Shots - 1;
             }
         }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
     }
 
     // Update is called once per frame

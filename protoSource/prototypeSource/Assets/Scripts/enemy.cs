@@ -18,9 +18,11 @@ public class enemy
 		}
 	}
 
+    //The method 'applyDamage' has been created to take away health from the player.
     public virtual int applyDamage(int playerHealth, int enemyType)
     {
         playerHealth = playerHealth - enemyType;
+        //The player's new health stat is returned so the program is up to date.
         return playerHealth;
     }
 }
