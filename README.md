@@ -5,4 +5,4 @@
 
 <img src="/piratedash.png?raw=true"/>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+For more details see [LinkedIn Post](https://www.linkedin.com/posts/nadia-nadeem-a96a34156_gamedevelopment-gamedev-student-activity-6623705899913613312-Ykt4).
