@@ -4,6 +4,6 @@
 
 ### 3. Support the selection of appropriate statistical tools and techniques
 
-<img src="images/pirateDash.png?raw=true"/>
+<img src="pirateDash.png?raw=true"/>
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
